@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Course Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>LearnHub</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Upgrade Your Skills Online</h2>
+    <p>Join thousands of learners worldwide and start your journey today.</p>
+    <button onclick="scrollToCourses()">Browse Courses</button>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="courses">
+    <h2>Popular Courses</h2>
+    <div class="course-list">
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, and JavaScript from scratch.</p>
+        <button onclick="enroll('Web Development')">Enroll</button>
+      </div>
+      <div class="course-card">
+        <h3>Data Science</h3>
+        <p>Master Python, statistics, and machine learning.</p>
+        <button onclick="enroll('Data Science')">Enroll</button>
+      </div>
+      <div class="course-card">
+        <h3>AI & Machine Learning</h3>
+        <p>Build intelligent systems with hands-on projects.</p>
+        <button onclick="enroll('AI & Machine Learning')">Enroll</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 LearnHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
